@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project Work</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Student Enrollment Form (Micro Project Work)</h2>
+      <form id="stuForm" method="post">
+        <div class="form-group">
+          <span>
+            <label for="rollNo">Roll-No:</label> <label id="stuIdMsg"> </label>
+          </span>
+          <input
+            type="text"
+            class="form-control"
+            onchange="getStudent()"
+            name="rollNo"
+            id="rollNo"
+            placeholder="Enter Roll-No"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="fullName">Student Full Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="fullName"
+            placeholder="Enter Full Name"
+            name="fullName"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="class">Class:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="class"
+            placeholder="Enter Class"
+            name="class"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="birthDate">Birth-Date:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="birthDate"
+            placeholder="Enter Birth-Date"
+            name="birthDate"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="address"
+            placeholder="Enter Address"
+            name="address"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="enrollmentDate">Enrollment-Date:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="enrollmentDate"
+            placeholder="Enter Enrollment-Date"
+            name="enrollmentDate"
+          />
+        </div>
+
+        <input
+          type="button"
+          class="btn btn-primary"
+          id="empSave"
+          value="Save"
+          onclick="saveData();"
+        />
+        <input
+          type="button"
+          class="btn btn-primary"
+          id="empChange"
+          value="Change"
+          onclick="changeData();"
+        />
+        <input
+          type="button"
+          class="btn btn-primary"
+          id="empReset"
+          value="Reset"
+          onClick="resetForm()"
+        />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
